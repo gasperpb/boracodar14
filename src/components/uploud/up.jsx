@@ -3,10 +3,7 @@ import axios from "axios";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { Description as DescriptionIcon, PictureAsPdf as PdfIcon } from "@mui/icons-material";
-//import { ReactComponent as PDFIcon } from './pdf-icon.svg';
-//import { ReactComponent as JPGIcon } from './jpg-icon.svg';
-//import { ReactComponent as PNGIcon } from './png-icon.svg';
-//import LinearProgress from "@mui/material/LinearProgress";
+
 function ImageUploader() {
     const [file, setFile] = useState(null);
     const [errorMessage, setErrorMessage] = useState(null);
@@ -91,6 +88,7 @@ function ImageUploader() {
                     onDrop={handleDrop}
                     onDragOver={handleDragOver}
                 >
+
                     <img src="CloudArrowUp.png" alt="" style={{ width: "48px", height: "48px", marginTop: "50px" }} />
                     <Typography variant="h5" sx={{ mb: 2, color: "#FFFFFF" }}>
                         Arraste ou clique para fazer upload

@@ -1,104 +1,60 @@
 <table>
   <thead>
     <tr>
-      <th>Tarefa</th>
+      <th>Diario de Tarefa</th>
       <th>Tempo gasto</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Estudo e pesquisa sobre APIs de envio de arquivos</td>
-      <td>2 horas</td>
+      <td>20 minutos</td>
     </tr>
     <tr>
       <td>Criação do projeto React.js</td>
+      <td>4 minutos</td>
+    </tr>
+    <tr>
+      <td>Implementação da funcionalidade de envio de arquivos </td>
       <td>1 hora</td>
     </tr>
     <tr>
-      <td>Implementação da funcionalidade de envio de arquivos com drag and drop</td>
-      <td>4 horas</td>
-    </tr>
-    <tr>
       <td>Estilização da página com @mui/material</td>
-      <td>3 horas</td>
+      <td>20 minutos</td>
     </tr>
     <tr>
       <td>Criação da tabela com o tempo gasto em cada tarefa</td>
-      <td>30 minutos</td>
+      <td> 3 minutos</td>
     </tr>
   </tbody>
 </table>
+ 
+
+![d1cfd75f-851a-4530-8bfc-bf46b047c9d8](https://user-images.githubusercontent.com/12601068/231018471-5629a85d-4923-4fe7-9fb2-b97d7920ea75.jpg)
+# File Uploader
+This is a simple React component that allows you to upload  files to a GitHub repository. It uses the GitHub API to authenticate and upload the file.
+
+Installation
+Clone or download the repository.
+Install the dependencies by running npm install.
+Run the app by running npm start.
+Usage
+To use the component, simply import it into your project and render it:
 
 
+# Features
+Drag and drop file upload
+File name display
+Error message display if no file is selected for upload
+File type icon display after successful upload
 
 
-# Getting Started with Create React App
+# Dependencies
+React
+axios
+@mui/material
+@mui/icons-material
+Credits
+This project was created by GasperPB as part of the Bora Codar #14 event.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
