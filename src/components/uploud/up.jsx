@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+import { Description as DescriptionIcon, PictureAsPdf as PdfIcon } from "@mui/icons-material";
+//import { ReactComponent as PDFIcon } from './pdf-icon.svg';
+//import { ReactComponent as JPGIcon } from './jpg-icon.svg';
+//import { ReactComponent as PNGIcon } from './png-icon.svg';
+//import LinearProgress from "@mui/material/LinearProgress";
 function ImageUploader() {
     const [file, setFile] = useState(null);
     const [errorMessage, setErrorMessage] = useState(null);
@@ -18,6 +23,7 @@ function ImageUploader() {
     };
 
     const handleUpload = async () => {
+
         if (!file) {
             setErrorMessage("Por favor selecione um arquivo para fazer upload.");
             return;
@@ -26,7 +32,7 @@ function ImageUploader() {
         // informações de autenticação
         const USERNAME = "gasperpb";
         const REPO_NAME = "boracodar14";
-        const TOKEN = "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";
+        const TOKEN = "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";
 
         // informações do arquivo
         const FILE_NAME = file.name;
@@ -68,10 +74,10 @@ function ImageUploader() {
     return (
         <div style={{ display: "fle", flexDirection: "column", alignItems: "center" }}>
             <div style={{ display: "flex", justifyContent: "center" }}>
-                <img src="CloudArrowUp.png" alt="" />
+
                 <Box
                     sx={{
-
+                        marginTop: "142px",
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",
@@ -79,12 +85,13 @@ function ImageUploader() {
                         height: "160px",
                         width: "440px",
                         backgroundColor: "#C1B2FA",
-                        padding: "20px",
+                        padding: "50px 0px px",
                         borderRadius: "8px",
                     }}
                     onDrop={handleDrop}
                     onDragOver={handleDragOver}
                 >
+                    <img src="CloudArrowUp.png" alt="" style={{ width: "48px", height: "48px", marginTop: "50px" }} />
                     <Typography variant="h5" sx={{ mb: 2, color: "#FFFFFF" }}>
                         Arraste ou clique para fazer upload
                     </Typography>
@@ -99,10 +106,14 @@ function ImageUploader() {
                 <Button onClick={handleUpload} variant="text">
                     Enviar imagem
                 </Button>
+
+            </div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
                 {errorMessage && <p style={{ color: "#FF0000" }}>{errorMessage}</p>}
                 {uploadedFiles.length > 0 &&
                     uploadedFiles.map((fileName) => (
-                        <div key={fileName} style={{ color: "#FFFFFF" }}>
+                        <div key={fileName} style={{ alignItems: "center", color: "#74dd11", width: "440px", height: "72px", backgroundColor: "white", boxShadow: "5px 5px 5px #575361", borderRadius: "8px" }}>
+                            {fileName.endsWith(".pdf") ? <PdfIcon style={{ marginRight: "10px" }} /> : <DescriptionIcon style={{ marginRight: "10px" }} />}
                             {fileName}
                         </div>
                     ))}
