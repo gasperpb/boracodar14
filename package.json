@@ -22,7 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "homepage": "https://github.com/gasperpb/boracodar14"
   },
   "eslintConfig": {
     "extends": [
@@ -43,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "homepage": "https://gasperpb.github.io/boracodar14/"
+    "gh-pages": "^5.0.0"
   }
 }
